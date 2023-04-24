@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+
+body{
+    background: rgba(12, 12, 12, 0.815);
+    color: white;
+    font-family: 'Staatliches', cursive;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    height: 50px;
+    background: rgb(182, 26, 143);
+}
+
+
+.icyM{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Great Vibes', cursive;
+    font: 400;
+
+}
+
+header ul{
+    height: 100%;
+    width: 80%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+header ul li a:hover{
+    color: rgb(187, 61, 187);
+    font-weight: bold;
+    font-size: 150%;
+}
+
+/* END HEADER */
+
+
+/* MAIN */
+
+
+/* Seção 1 */
+
+.secao1{
+    background: rgb(17, 17, 31);
+    height: 500px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.quadrado{
+    background: rgb(168, 157, 157);
+    height: 400px;
+    width: 270px;
+}
+
+.imagem{
+    height: 270px;
+}
+
+.descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+}
+
+.btn{
+    background: purple;
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+}
+
+.btn:hover{
+    background: blue;
+    color: black;
+}
+
+.descricao h1{
+    color: purple;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.descricao a{
+    padding-top: 20px;
+}
+
+.secao2{
+    background: linear-gradient(rgba(23, 23, 24, 0.8), rgba(41, 16, 109, 0.8)),
+    url("../imgs/secao2.jpg");
+    background-position: center;
+    background-size: cover;
+
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spotify{
+    width: 30%;
+}
+
+.main-email{
+    font-size: 60px;
+    text-align: center;
+    padding-top: 30px;
+}
+.main-email div{
+    width: 80%;
+}
+
+/* END MAIN */
+
+
+/* FOOTER */
+
+footer{
+    height: 200px;
+    display: flex;
+    
+}
+
+.esquerda, .direita{
+    width: 50%;
+}
+
+.esquerda{
+    background: rgb(12, 3, 63);
+}
+
+.direita{
+    background: rgb(31, 11, 141);
+}
+
+.esquerda ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.direita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* END FOOTER */
+
+
+/* PAGINA SOBRE */
+
+.main-sobre, .main-email{
+    height: 1000px;
+    background: linear-gradient(rgba(23, 23, 24, 0.8), rgba(41, 16, 109, 0.8)),
+    url("../imgs/capasobre.jpg");
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+}
+
+.main-sobre div{
+    
+    padding-top: 80px;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main-sobre div p{
+    font-size: 20px;
+    color: rgb(240, 226, 226);
+    line-height: 150%;
+    font-weight: bold;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    header{
+        background: rgb(128, 0, 107);
+    }
+    .spotify{
+        width: 90%;
+    }
+
+    footer{
+        height: 400px;
+    }
+
+    .main-sobre{
+        background: rgb(22, 22, 22);
+        height: 100%;
+    }
+
+    .main-sobre div{
+        padding-top: 10px;
+        width: 80%;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .main-sobre div p{
+        font-size: 20px;
+        color: rgb(240, 226, 226);
+        line-height: 150%;
+        font-weight: bold;
+    }
+
+    .main-email{
+        font-size: 30px;
+    }
+    .main-email div{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        height: 100px;
+        flex-wrap: wrap;
+    }
+    header ul li a{
+        font-size: 15px;
+    }
+
+    .secao1{
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .esquerda ul{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+    }
+
+    .direita div{
+        width: 80%;
+    }
+    
+}
